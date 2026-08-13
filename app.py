@@ -457,7 +457,7 @@ def color_priority(val):
         return 'background-color: #ccffcc'
 
 st.dataframe(
-    tasks_data.style.applymap(color_priority, subset=['الأولوية']),
+    tasks_data.style.map(color_priority, subset=['الأولوية']),
     use_container_width=True,
     hide_index=True
 )
